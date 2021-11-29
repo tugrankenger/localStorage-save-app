@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+body{
+    background-color: hsla(241,79%,70%,0.52);
+    color: hsl(0,0%,100%);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.input-group{
+    .form-control{
+        margin-right: 10px;
+    }
+    .submitBtn{
+        letter-spacing: 1.2px;
+        border: none;
+        transition: all .7s;
+        &:hover{
+            background-color: hsla(120,82%,75%,0.74);
+            transition: all .7s;
+        }
+    }
+}
+
+.reverseIcon {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+
+    i{
+        margin-right: 10px;
+        color: hsla(120,82%,75%,0.74);
+        font-size: 1rem;
+    }
+}
+
+.customAlign{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemsList{
+    height: 200px;
+    overflow-y: auto;
+}
+
+.footer{
+    
+    span{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.socialA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a:not(:last-child){
+        margin-right: 1rem;
+    }
+    i{
+        font-size: 2rem;
+        color: hsl(0,0%,100%);
+    }
+    
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: hsl(0,0%,100%);; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsla(111,70%,30%,0.74); 
+}
