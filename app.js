@@ -24,7 +24,7 @@ form.addEventListener("submit",function(e){
 
     itemsArray.push(input.value);
     localStorage.setItem('items',JSON.stringify(itemsArray));
-    if(input.value !==""){
+    if(input.value.trim() !==""){
         liMaker(input.value);
     }else{
         alert("please entry something")
